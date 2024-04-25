@@ -1,4 +1,4 @@
-package org.example.client.dto.cmd;
+package org.example.client.customer.dto.cmd;
 
 import lombok.Data;
 

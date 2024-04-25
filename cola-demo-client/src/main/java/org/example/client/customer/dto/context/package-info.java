@@ -5,4 +5,4 @@
  * @version 1.0.0
  * @since 2024-04-25
  */
-package org.example.client.dto.context;
+package org.example.client.customer.dto.context;

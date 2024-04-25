@@ -1,4 +1,4 @@
-package org.example.client.dto.clientobject;
+package org.example.client.customer.dto.clientobject;
 
 import lombok.Data;
 

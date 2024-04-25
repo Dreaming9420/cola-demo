@@ -1,4 +1,4 @@
-package org.example.client.dto.cmd.query;
+package org.example.client.customer.dto.cmd.query;
 
 import com.alibaba.cola.dto.Query;
 import lombok.Data;

@@ -1,8 +1,8 @@
 package org.example.app.customer.executor.query;
 
 import com.alibaba.cola.dto.MultiResponse;
-import org.example.client.dto.clientobject.CustomerCO;
-import org.example.client.dto.cmd.query.CustomerListByNameQuery;
+import org.example.client.customer.dto.clientobject.CustomerCO;
+import org.example.client.customer.dto.cmd.query.CustomerListByNameQuery;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;

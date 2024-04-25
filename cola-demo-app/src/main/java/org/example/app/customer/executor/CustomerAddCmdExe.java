@@ -3,7 +3,7 @@ package org.example.app.customer.executor;
 
 import com.alibaba.cola.dto.Response;
 import com.alibaba.cola.exception.Assert;
-import org.example.client.dto.cmd.CustomerAddCmd;
+import org.example.client.customer.dto.cmd.CustomerAddCmd;
 import org.springframework.stereotype.Component;
 
 
