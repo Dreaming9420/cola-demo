@@ -1,7 +1,7 @@
 package org.example.domain.customer.gateway;
 
-import org.example.domain.customer.Customer;
+import org.example.domain.customer.entity.CustomerEntity;
 
 public interface CustomerGateway {
-    Customer getByById(String customerId);
+    CustomerEntity getByById(String customerId);
 }

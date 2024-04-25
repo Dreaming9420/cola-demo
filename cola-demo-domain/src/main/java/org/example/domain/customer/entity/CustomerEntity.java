@@ -1,0 +1,40 @@
+package org.example.domain.customer.entity;
+
+import com.alibaba.cola.domain.Entity;
+import com.alibaba.cola.exception.BizException;
+import lombok.Data;
+import org.example.domain.customer.enums.CompanyType;
+import org.example.domain.customer.enums.SourceType;
+
+// Domain Entity can choose to extend the domain model which is used for DTO
+@Data
+@Entity
+public class CustomerEntity {
+
+    private String customerId;
+    private String memberId;
+    private String globalId;
+    private long registeredCapital;
+    private String companyName;
+    private SourceType sourceType;
+    private CompanyType companyType;
+
+    public CustomerEntity() {
+    }
+
+    public boolean isBigCompany() {
+        return registeredCapital > 10000000; // 注册资金大于1000万的是大企业
+    }
+
+    public boolean isSME() {
+        return registeredCapital > 10000 && registeredCapital < 1000000; // 注册资金大于10万小于100万的为中小企业
+    }
+
+    public void checkConflict() {
+        // Per different biz, the check policy could be different, if so, use ExtensionPoint
+        if ("ConflictCompanyName".equals(this.companyName)) {
+            throw new BizException(this.companyName + " has already existed, you can not add it");
+        }
+
+    }
+}
