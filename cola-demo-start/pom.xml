@@ -9,7 +9,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>start</artifactId>
+    <artifactId>cola-demo-start</artifactId>
     <packaging>jar</packaging>
     <name>start</name>
 

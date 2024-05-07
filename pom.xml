@@ -28,7 +28,7 @@
         <module>cola-demo-app</module>
         <module>cola-demo-domain</module>
         <module>cola-demo-infrastructure</module>
-        <module>start</module>
+        <module>cola-demo-start</module>
     </modules>
 
     <dependencies>
