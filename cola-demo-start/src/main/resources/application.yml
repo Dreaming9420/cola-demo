@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    active: dev
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
@@ -12,4 +14,10 @@ spring:
       schema-locations: classpath:sql/schema-init.sql
       data-locations: classpath:sql/data-init.sql
 
-
+# mybatis-plus配置
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: isDeleted
+      logic-not-delete-value: 1
+      logic-delete-value: 0
