@@ -23,10 +23,5 @@
             <groupId>org.example</groupId>
             <artifactId>cola-demo-infrastructure</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>com.alibaba.cola</groupId>
-            <artifactId>cola-component-catchlog-starter</artifactId>
-        </dependency>
     </dependencies>
 </project>
