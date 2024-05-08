@@ -1,5 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:test
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+  sql:
+    init:
+      username: sa
+      password:
+      platform: h2
+      schema-locations: classpath:sql/h2/schema-init.sql
+      data-locations: classpath:sql/h2/data-init.sql
+      mode: EMBEDDED
+
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-
 

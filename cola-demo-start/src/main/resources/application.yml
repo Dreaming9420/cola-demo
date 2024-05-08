@@ -11,8 +11,8 @@ spring:
       mode: always
       username: root
       password: root
-      schema-locations: classpath:sql/schema-init.sql
-      data-locations: classpath:sql/data-init.sql
+      schema-locations: classpath:sql/mysql/schema-init.sql
+      data-locations: classpath:sql/mysql/data-init.sql
 
 # mybatis-plus配置
 mybatis-plus:
