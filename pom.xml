@@ -23,12 +23,16 @@
         <fastjson.version>2.0.48</fastjson.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
         <lombok.version>1.18.32</lombok.version>
+        <guava.version>33.1.0-jre</guava.version>
+        <commons-lang3.version>3.14.0</commons-lang3.version>
+        <commons-collections4.version>4.4</commons-collections4.version>
     </properties>
 
     <modules>
         <module>cola-demo-client</module>
         <module>cola-demo-adapter</module>
         <module>cola-demo-app</module>
+        <module>cola-demo-common</module>
         <module>cola-demo-domain</module>
         <module>cola-demo-infrastructure</module>
         <module>cola-demo-start</module>
@@ -71,6 +75,11 @@
                 <artifactId>cola-demo-infrastructure</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>cola-demo-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
             <!--Project modules End-->
 
             <dependency>
@@ -109,6 +118,27 @@
                 <groupId>org.mapstruct</groupId>
                 <artifactId>mapstruct</artifactId>
                 <version>${mapstruct.version}</version>
+            </dependency>
+
+            <!-- guava -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
+            <!-- commons-lang3 字符串处理 -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
+            </dependency>
+
+            <!-- commons-collections4 集合处理 -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>${commons-collections4.version}</version>
             </dependency>
             <!-- Misc End -->
         </dependencies>

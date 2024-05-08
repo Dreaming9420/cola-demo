@@ -10,13 +10,17 @@
     </parent>
 
     <artifactId>cola-demo-infrastructure</artifactId>
-    <packaging>jar</packaging>
     <name>cola-demo-infrastructure</name>
 
     <dependencies>
         <dependency>
             <groupId>org.example</groupId>
             <artifactId>cola-demo-domain</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>cola-demo-common</artifactId>
         </dependency>
 
         <dependency>

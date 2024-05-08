@@ -10,7 +10,6 @@
     </parent>
 
     <artifactId>cola-demo-app</artifactId>
-    <packaging>jar</packaging>
     <name>cola-demo-app</name>
 
     <dependencies>
