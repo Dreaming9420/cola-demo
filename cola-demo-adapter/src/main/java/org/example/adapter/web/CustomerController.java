@@ -21,11 +21,6 @@ public class CustomerController {
     @Resource
     private CustomerServiceI customerService;
 
-    @GetMapping(value = "/helloworld")
-    public String helloWorld() {
-        return "Hello, welcome to COLA world!";
-    }
-
     @GetMapping(value = "/customer")
     public MultiResponse<CustomerCO> listCustomerByName(@RequestParam(required = false) String name) {
         CustomerListByNameQuery customerListByNameQuery = new CustomerListByNameQuery();

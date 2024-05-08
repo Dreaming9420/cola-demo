@@ -10,6 +10,7 @@ CREATE TABLE IF NOT EXISTS item
         PRIMARY KEY,
     item_name    VARCHAR(255)                               NOT NULL COMMENT '商品名称',
     introduction TEXT                                       NULL COMMENT '介绍',
+    cost_price BIGINT UNSIGNED DEFAULT '0' NOT NULL COMMENT '成本价(单位：分)',
     sale_price   BIGINT UNSIGNED  DEFAULT '0'               NOT NULL COMMENT '售价(单位：分)',
     is_deleted   TINYINT UNSIGNED DEFAULT '1'               NOT NULL COMMENT '逻辑删除字段(0：已删除；1：未删除)',
     create_time  DATETIME         DEFAULT CURRENT_TIMESTAMP NOT NULL COMMENT '创建时间',

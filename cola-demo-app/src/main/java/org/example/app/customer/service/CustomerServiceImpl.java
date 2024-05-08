@@ -1,6 +1,5 @@
 package org.example.app.customer.service;
 
-import com.alibaba.cola.catchlog.CatchAndLog;
 import com.alibaba.cola.dto.MultiResponse;
 import com.alibaba.cola.dto.Response;
 import org.example.app.customer.executor.CustomerAddCmdExe;
@@ -15,7 +14,7 @@ import javax.annotation.Resource;
 
 
 @Service
-@CatchAndLog
+// @CatchAndLog
 public class CustomerServiceImpl implements CustomerServiceI {
 
     @Resource
